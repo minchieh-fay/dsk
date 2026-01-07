@@ -71,7 +71,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/minchieh-fay/dsk/dsk"
+	"github.com/minchieh-fay/dsk"
 )
 
 func main() {
@@ -266,13 +266,12 @@ type Chunk struct {
 
 ```
 dsk/
-├── dsk/              # 核心包
-│   ├── api.go        # API 客户端实现
-│   ├── pow.go        # WASM PoW 求解器
-│   ├── debug.go      # 调试工具
-│   ├── utils.go      # 工具函数
-│   └── wasm/         # WASM 文件（已嵌入）
-│       └── sha3_wasm_bg.7b9ca65ddd.wasm
+├── api.go            # API 客户端实现
+├── pow.go            # WASM PoW 求解器
+├── debug.go          # 调试工具
+├── utils.go          # 工具函数
+├── wasm/             # WASM 文件（已嵌入）
+│   └── sha3_wasm_bg.7b9ca65ddd.wasm
 ├── example/          # 示例代码
 │   ├── go.mod
 │   └── main.go

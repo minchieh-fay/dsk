@@ -48,7 +48,7 @@ func main() {
 	fmt.Println("---")
 
 	fmt.Println("Getting chat completion...")
-	chunkChan, errChan := api.ChatCompletion(chatID, "go语言是什么, 请用20字回答", nil, false, false)
+	chunkChan, errChan := api.ChatCompletion(chatID, "What is Go programming language?", nil, false, false)
 
 	// 处理流式响应
 	receivedAny := false
