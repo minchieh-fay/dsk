@@ -306,6 +306,8 @@ func FindWASMPath() (string, error) {
 			dir := filepath.Dir(filename)
 			return filepath.Join(dir, "wasm", wasmFileName)
 		}(),
+		// 从根目录查找
+		filepath.Join(".", "wasm", wasmFileName),
 		// 从工作目录查找
 		filepath.Join("dsk", "wasm", wasmFileName),
 		// 从上级目录查找

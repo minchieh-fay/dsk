@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/minchieh-fay/dsk/dsk"
+	"github.com/minchieh-fay/dsk"
 )
 
 func init() {
